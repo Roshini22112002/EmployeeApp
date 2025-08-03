@@ -1,0 +1,44 @@
+body {
+    background-image: url("/img.jpeg") !important;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  #bar {
+    background-color:rgba(234, 225, 225, 0);
+    padding: 10px;
+  }
+
+  .nav-link {
+    color:black !important;
+    font-weight: 500;
+    border: 1px solid black !important;
+    margin-right: 5px !important;
+    border-radius: 8px !important;
+    margin-top: 10px !important;
+  }
+
+  .nav-link:hover {
+    background-color:rgba(245, 245, 220, 0.692) !important;
+  }
+#form{
+    border: 5px solid orange;
+    width:400px;
+    height: 500px;
+    margin-left: 550px;
+    margin-top: 50px;
+    padding: 30px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+}
+input{
+    opacity: 0.6;
+}
+button{
+    width:80px;
+    border-radius: 10px !important;
+    color: White;
+    background-color: black;
+    margin-left: 130px !important;
+    margin-top: 20px !important;
+}

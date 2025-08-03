@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Employee</title>
+  <link rel="stylesheet" href="/style3.css">
+  <link rel="stylesheet" href="/style3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="edit">
+
+    <form action="/basic/edit/<%= employee.id %>" method="POST" class="mt-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">EmployeeName</label>
+        <input type="text" class="form-control" id="name" name="EmployeeName" value="<%= employee.EmployeeName %>" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="designation" class="form-label">EmployeeDesignation</label>
+        <input type="text" class="form-control"    name="EmployeeDesignation"value="<%= employee.EmployeeDesignation %>" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="location" class="form-label">EmployeeLocation</label>
+        <input type="text" class="form-control" id="location" name="EmployeeLocation" value="<%= employee.EmployeeLocation %>" required>
+      </div>
+      <div class="mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input type="number" class="form-control" id="salary" name="Salary" value="<%= employee.Salary %>" required>
+      </div>
+
+      <button type="submit">Update</button>
+      <a href="/basic" class="btn btn-secondary">Cancel</a>
+    </form>
+    </div>
+  </div>
+</body>
+</html>
